@@ -437,7 +437,7 @@ drumPitchNames = #'(   (footpedal . footpedal)
       >>
       <<
         \new DrumVoice {
-          <bd sn>16 <\parenthesize bdb sn>16 <bd sn>8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length <bd snd>8 bd8 bd8 bd8 mt32 sn32 sn32 sn32 sna8\accent
+          <bd sn>16 sn16 <\parenthesize bdb sn>8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length <bd snd>8 bd8 bd8 bd8 mt32 sn32 sn32 sn32 sna8\accent
         }
       >>
       <<
@@ -487,17 +487,17 @@ drumPitchNames = #'(   (footpedal . footpedal)
         }
         \new DrumVoice {
           \voiceTwo
-          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd16 <\parenthesize bdb>16 bd8 bd16 <\parenthesize bdb>16 sna8\accent
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd8 bd8 bd16 <\parenthesize bdb>16 sna8\accent
         }
       >>
       <<
         \new DrumVoice {
           \voiceOne
-          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
         }
         \new DrumVoice {
           \voiceTwo
-          bd16 sn16 bd16 bd16 sna8\accent bd16 sn16 bd16 bd16 sn8 sna16\accent bd16 sna8\accent
+          bd16 sn16 bd16 bd16 sna8\accent bd16 sn16 bd16 bd16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd16 bd16 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd8
         }
       >>
       <<
@@ -518,6 +518,501 @@ drumPitchNames = #'(   (footpedal . footpedal)
         \new DrumVoice {
           \voiceTwo
           bd16 sn16 bd16 bd16 sna8.\accent sn16 bd16 bd16 sn8 mt32 sn32 sn32 sn32 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          sn16 sn16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd8 bd8 bd8 bd8 bd8 bd8
+        }
+      >>
+      <<
+        \new DrumVoice {
+          sn16 sn16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd8 <\parenthesize bdb>8 sn16 sn16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd4
+        }
+      >>
+      <<
+        \new DrumVoice {
+          sn16 sn16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd8 bd8 bd8 bd8 bd8 bd8
+        }
+      >>
+      <<
+        \new DrumVoice {
+          <bd sn>16 sn16 <\parenthesize bdb sn>8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length <bd snd>8 bd8 bd8 bd8 bd8 bd8
+        }
+      >>
+      <<
+        \new DrumVoice {
+          sn16 sn16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd8 bd8 bd8 bd8 bd8 bd8
+        }
+      >>
+      <<
+        \new DrumVoice {
+          sn16 sn16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd4 sn16 sn16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd4
+        }
+      >>
+      <<
+        \new DrumVoice {
+          sn16 sn16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd8 bd8 bd8 bd8 bd8 bd8
+        }
+      >>
+      <<
+        \new DrumVoice {
+          <bd sn>16 sn16 <\parenthesize bdb sn>8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length <bd snd>8 bd8 bd8 bd8 mt32 sn32 sn32 sn32 sna32\accent sn32 <\parenthesize snb>32 sn32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd8 bd8 r16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 sn16 bd16 bd16 sna8.\accent sn16 bd8 bd8 r8 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 sn16 bd16 bd16 sna8.\accent sn16 bd8 bd8 bd16 bd16 sna16\accent bd16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. bd16 sna8.\accent sn16 bd8 sn8 mt32 sn32 sn32 sn32 sna32\accent sn32 sn32 sn32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd8 bd8 bd16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 sn16 bd16 bd16 sna8\accent bd16 sn16 bd16 bd16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd16 bd16 \override Stem #'length = #4 \acciaccatura{ftc8} \revert Stem #'length ftc16 bd16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 cr4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd8 bd8 sna8.\accent sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 cr4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd16 sna16\accent bd16 bd16 sn8 mt16 sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd8 bd8 r16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 sn16 bd16 bd16 sna8.\accent sn16 bd8 bd8 r16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd16 sn16 bd8 r16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 cr8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 sn16 bd16 bd16 sna8.\accent sn16 bd8 sna8\accent mt32 sn32 sn32 sn32 sna32\accent sn32 sn32 sn32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd16 sn16 bd8 r16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 sn16 bd16 bd16 sna8\accent bd16 sn16 bd16 bd16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd16 bd16 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd8
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd8 bd8 bd8 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. bd16 sna8.\accent sn16 bd16 bd16 sn8 sn32 sn32 bd16 sn32 sn32 bd16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd8 bd8 r16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 sn16 bd16 bd16 sna8\accent bd16 sn16 bd16 bd16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd16 bd16 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd8
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sna8.\accent sn16 bd8 bd8 r16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 cr8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd16 bd16 sna8.\accent sn16 bd16 bd16 sna8\accent mt32 sn32 sn32 sn32 sna32\accent mt32 sn32 sn32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. <\parenthesize bdb>16 sn8. sna16\accent bd8 bd8 r16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 sn16 bd16 bd16 sna8.\accent sn16 bd8 bd8 bd16 bd16 sna16\accent bd16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. bd16 sna8.\accent sn16 bd8 bd8 r16 bd16 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd4 sna8.\accent sn16 bd16 bd16 sn8 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd16 bd16 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd8
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8. bd16 sna8.\accent sn16 bd8 bd8 bd8 sna8\accent
+        }
+      >>
+      <<
+        \new DrumVoice {
+          bd16 ht32 ht32 bd16 bd16 mt32 mt32 bd16 bd16 mt32 mt32 bd16 bd16 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd16 bd16 \override Stem #'length = #4 \acciaccatura{snd8} \revert Stem #'length snd16 bd16 ft8
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 cr4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd4 sn8. sn16 bd16 sn16 bd16 bd16 sn4
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 sn8. sn16 bd16 sn16 bd16 bd16 sn8. sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 sn8. sn16 bd16 sn16 bd8 <\parenthesize snb>8. sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 sn8. sn16 bd16 sn16 bd8 sn8. sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 r8 sn8 bd16 sn16 bd16 bd16 sn8. sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 r16 bd16 sn8 bd16 sn16 bd16 bd16 sn8. sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 bd16 bd8 bd16 bd16 sn8 bd16 sn16 bd16 bd16 sn8. sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 bd16 bd8 bd16 bd16 sn8 bd16 sn16 bd16 bd16 sn8. sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 bd16 bd8 bd16 bd16 sn8 bd16 sn16 bd16 bd16 sn8. sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 bd16 bd8 bd16 bd16 sn8 bd16 sn16 bd16 bd16 mt32 sn32 sn32 sn32 sna32\accent sn32 sn32 sn32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 sn8. sn16 bd16 <\parenthesize snb>16 bd16 bd16 sn8. sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 ri8 ri8
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 bd16 bd16 sn8 bd16 sn16 bd16 <\parenthesize snb>16 sn16 bd8 sn16
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd16 bd16 bd8 bd16 bd16 sn8 r16 sn16 bd16 bd16 mt32 mt32 sn32 sn32 sna32\accent sn32 sn32 sn32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 sn8. sn16 bd16 bd16 sn8 mt32 mt32 sn32 sn32 sna32\accent sn32 ft32 ft32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 sn8. sn16 bd16 <\parenthesize bdb>16 sn8 sn32 sn32 sn32 sn32 sna32\accent sn32 ft32 ft32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd16 bd16 sn8. sn16 bd16 bd16 sn16 <\parenthesize bdb>16 sn32 sn32 mt32 sn32 sna32\accent sn32 ft32 ft32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 ri8 ri8 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd16 bd16 sn8. sn16 bd16 bd16 sn8 sn32 sn32 mt32 mt32 sn32 sn32 ft32 ft32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 s4 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 sn8. r32 sn32 sn16 sn16 sn16 sn32 sn32 sna32\accent sn32 sn32 sn32 sn32 sn32 ft32 ft32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          cr8 ri8 ri8 ri8 s4 s4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 sn8 bd8 sn32 <\parenthesize snb>32 <\parenthesize snb>32 sn32 sna16\accent mt16 sna32\accent sn32 sn32 sn32 sn32 sn32 ft32 ft32
+        }
+      >>
+      <<
+        \new DrumVoice {
+          \voiceOne
+          ri8 ri8 ri4 s4 r4
+        }
+        \new DrumVoice {
+          \voiceTwo
+          bd8 bd8 sn4 sn4 r4
         }
       >>
     }
